@@ -81,7 +81,7 @@ if !exists('s:voom_did_init')
     "        2 -- as 1, in addition Move Right/Left, Add New Headline As Child are not supported
     "   'mmode' : markup mode,
     "   'tick' : b:changedtick of Body on Body BufLeave,
-    "   'tick_' : b:changedtick of Body on last Tree update 
+    "   'tick_' : b:changedtick of Body on last Tree update
     "         }, {...}, ... }
     let s:voom_bodies = {}
 
@@ -1208,28 +1208,28 @@ nnoremap <buffer><silent>             AA :<C-u>call voom#OopInsert('as_child')<C
 
 " move
 nnoremap <buffer><silent> <LocalLeader>u :<C-u>call voom#Oop('up', 'n')<CR>
-nnoremap <buffer><silent>         <C-Up> :<C-u>call voom#Oop('up', 'n')<CR>
+nnoremap <buffer><silent>         <C-S-Up> :<C-u>call voom#Oop('up', 'n')<CR>
 nnoremap <buffer><silent>             ^^ :<C-u>call voom#Oop('up', 'n')<CR>
 vnoremap <buffer><silent> <LocalLeader>u :<C-u>call voom#Oop('up', 'v')<CR>
 vnoremap <buffer><silent>         <C-Up> :<C-u>call voom#Oop('up', 'v')<CR>
 vnoremap <buffer><silent>             ^^ :<C-u>call voom#Oop('up', 'v')<CR>
 
 nnoremap <buffer><silent> <LocalLeader>d :<C-u>call voom#Oop('down', 'n')<CR>
-nnoremap <buffer><silent>       <C-Down> :<C-u>call voom#Oop('down', 'n')<CR>
+nnoremap <buffer><silent>       <C-S-Down> :<C-u>call voom#Oop('down', 'n')<CR>
 nnoremap <buffer><silent>             __ :<C-u>call voom#Oop('down', 'n')<CR>
 vnoremap <buffer><silent> <LocalLeader>d :<C-u>call voom#Oop('down', 'v')<CR>
 vnoremap <buffer><silent>       <C-Down> :<C-u>call voom#Oop('down', 'v')<CR>
 vnoremap <buffer><silent>             __ :<C-u>call voom#Oop('down', 'v')<CR>
 
 nnoremap <buffer><silent> <LocalLeader>l :<C-u>call voom#Oop('left', 'n')<CR>
-nnoremap <buffer><silent>       <C-Left> :<C-u>call voom#Oop('left', 'n')<CR>
+nnoremap <buffer><silent>       <C-S-Left> :<C-u>call voom#Oop('left', 'n')<CR>
 nnoremap <buffer><silent>             << :<C-u>call voom#Oop('left', 'n')<CR>
 vnoremap <buffer><silent> <LocalLeader>l :<C-u>call voom#Oop('left', 'v')<CR>
 vnoremap <buffer><silent>       <C-Left> :<C-u>call voom#Oop('left', 'v')<CR>
 vnoremap <buffer><silent>             << :<C-u>call voom#Oop('left', 'v')<CR>
 
 nnoremap <buffer><silent> <LocalLeader>r :<C-u>call voom#Oop('right', 'n')<CR>
-nnoremap <buffer><silent>      <C-Right> :<C-u>call voom#Oop('right', 'n')<CR>
+nnoremap <buffer><silent>      <C-S-Right> :<C-u>call voom#Oop('right', 'n')<CR>
 nnoremap <buffer><silent>             >> :<C-u>call voom#Oop('right', 'n')<CR>
 vnoremap <buffer><silent> <LocalLeader>r :<C-u>call voom#Oop('right', 'v')<CR>
 vnoremap <buffer><silent>      <C-Right> :<C-u>call voom#Oop('right', 'v')<CR>
